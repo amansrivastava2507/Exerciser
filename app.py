@@ -18,11 +18,11 @@ equipment = ['Any', 'Atlas Stone', 'Barbell', 'Bodyweight',
              'Rope', 'Sandbag', 'Slamball', 'Sled', 'Specialized Machine',
              'Trap Bar', 'Wrist Roller']
 
-st.set_page_config(page_title='Physiotherapy', 
+st.set_page_config(page_title='Workout', 
                    page_icon='🧑‍⚕️', 
                    layout='wide')
 
-st.title('Physiotherapy Exerciser')
+st.title('Workout Exerciser')
 
 st.sidebar.header('⬇ Choose From Filters Below ⬇')
 
@@ -145,7 +145,7 @@ column_1, column_2, column_3 = st.columns(3)
 with column_1:
     checkbox_1 = st.checkbox('View Exercise Images', value = False)
 with column_2:
-    checkbox_2 = st.checkbox('Write Your Physiotherapy Exercises', value = False)
+    checkbox_2 = st.checkbox('Write Your Workout Exercises', value = False)
 
 if checkbox_1:
     column_4, column_5 = st.columns(2)
@@ -2564,7 +2564,7 @@ if checkbox_1:
             st.image(demo_pics[240], width = 300)
 
 if checkbox_2:
-    st.header('My Physiotherapy Exercises:')
+    st.header('My Workout Exercises:')
     df_2 = pd.DataFrame({'Exercise': ['', '', '', '', '', '', '', '', '', '', '', ''], 
                     'Weight': ['', '', '', '', '', '', '', '', '', '', '', ''], 
                     'Sets': ['', '', '', '', '', '', '', '', '', '', '', ''],
@@ -3046,8 +3046,8 @@ if checkbox_2:
 
     st.download_button(
         'Download as CSV',
-        physiotherapy_to_csv,
-        'physiotherapy.csv',
+        workout_to_csv,
+        'Workout.csv',
         'text/csv',
         key='download-csv')
 
