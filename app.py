@@ -23,7 +23,7 @@ st.set_page_config(page_title='Workout',
                    layout='wide')
 
 st.title('Workout Exerciser')
-
+st.image('https://bodypeformanceindex.streamlit.app/~/+/media/24b47fb596d07a15c8c78b81d086ede73353004c604a42c2f48ae0b9.gif')
 st.sidebar.header('⬇ Choose From Filters Below ⬇')
 
 muscle_group = st.sidebar.radio('Primary Muscle Group:', options = ['All', 'Abdominals', 'Abductors', 
