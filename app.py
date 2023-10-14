@@ -23,6 +23,7 @@ st.set_page_config(page_title='Workout',
                    layout='wide')
 
 st.title('Workout Exerciser')
+st.info('Regular exercise offers a myriad of physical, mental, and emotional benefits. From improved cardiovascular health and enhanced muscle strength to weight management and increased flexibility, exercise is a cornerstone of overall well-being. It boosts mood by releasing endorphins, reduces stress, and enhances cognitive function. Exercise also plays a pivotal role in preventing chronic diseases like diabetes and hypertension. Additionally, it fosters social connections, as group activities and sports provide opportunities for bonding. Ultimately, a consistent exercise routine contributes to a longer, healthier life, promoting longevity and a higher quality of life.')
 st.sidebar.image('https://bodypeformanceindex.streamlit.app/~/+/media/24b47fb596d07a15c8c78b81d086ede73353004c604a42c2f48ae0b9.gif')
 st.sidebar.header('⬇ Choose From Filters Below ⬇')
 
